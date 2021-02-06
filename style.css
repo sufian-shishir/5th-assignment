@@ -1,0 +1,26 @@
+#main-section{
+    background-color: goldenrod;
+}
+.searching-meal{
+    margin-left: 500px;
+    padding-top: 50px;
+}
+.food{
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.food img {
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+}
+#dishes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-left: 20px;
+    margin-left: 30px;
+}
