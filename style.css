@@ -1,26 +1,28 @@
 #main-section{
     background-color: goldenrod;
+    border-radius: 10px;
 }
 .searching-meal{
     margin-left: 500px;
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 .food{
     margin-top: 40px;
-    background-color: white;
+    background-color: rgb(241, 225, 225);
     border-radius: 10px;
     text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
 
 }
 .food img {
     width: 200px;
-    height: 200px;
-    padding: 25px;
+    height: 180px;
 }
 #dishes{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
     padding-left: 20px;
-    margin-left: 30px;
-}
+    margin-left: 55px;
+};
