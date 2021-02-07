@@ -2,11 +2,7 @@
     background-color: goldenrod;
     border-radius: 10px;
 }
-.searching-meal{
-    margin-left: 500px;
-    padding-top: 50px;
-    margin-bottom: 50px;
-}
+
 .food{
     margin-top: 40px;
     background-color: rgb(241, 225, 225);
@@ -25,4 +21,12 @@
     grid-template-columns: repeat(4, 1fr);
     padding-left: 20px;
     margin-left: 55px;
-};
+}
+#dishIngredients{
+    text-align: center;
+}
+
+#dishIngredients img{
+    height: 200px;
+    width: 200px;
+}

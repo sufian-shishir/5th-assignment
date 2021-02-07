@@ -1,22 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Cooking Master</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="main-section">
-        <div class="searching-meal">
-            <input id="search-meal" type="text" placeholder="Search for meal">
-            <button class="btn btn-danger" id="search-btn">Search</button>
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="search-meal" type="text" class="form-control" placeholder="Search for meal">
+                <div class="input-group-append">
+                    <button id="search-btn" type="button" class="btn btn-info">Search</button>
+                </div>
+            </div>
+        </form>
+        <div id="dishIngredients">
+
         </div>
         <div id="dishes">
 
         </div>
     </section>
-        
+
+    <!-- script -->
     <script src="script.js"></script>
 </body>
+
 </html>
