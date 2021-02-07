@@ -17,6 +17,8 @@ const searchBtn = document.getElementById('search-btn').addEventListener('click'
 
 // displayMeals function for display the foods in dishDiv.
 const displayMeals = foods => {
+   if(foods){
+       document.getElementById("not-found").style.display = 'none';
     const dishesDiv = document.getElementById('dishes');
     foods.forEach(food => {
         const dishDiv = document.createElement('div');
@@ -27,13 +29,20 @@ const displayMeals = foods => {
             `
         dishesDiv.appendChild(dishDiv);
     });
+   }
+   else{
+       document.getElementById("not-found").style.display = 'block';
+    const dishesDiv = document.getElementById('not-found');
+    dishesDiv.innerHTML = `
+    <h2>No Dishes Available<h2>`
+   }
 };
 
 // displayIngredients function.
 const displayIngredients = dishName =>{
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${dishName}`)
     .then(res => res.json())
-    .then(data => displayIngredientDetails(data.meals[0]))
+    .then(data => displayIngredientDetails(data.meals))
 };
 
 // displayIngredientDetails function for show the details of a food.
